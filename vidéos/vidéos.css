@@ -164,18 +164,6 @@ main {
   margin-bottom: 1em;
 }
 
-h1 {
-  color: rgb(0, 0, 0);
-  font-family: 'Livvic', sans-serif;
-  font-weight: 600;
-  font-size: 4em;
-  text-align: center;
-  text-transform: uppercase;
-  text-rendering: optimizeLegibility;
-  letter-spacing: .25em;
-  /* margin-bottom: .5em; */
-  /* border: 2px blue dotted; */
-}
 
 figure {
   /* height: 12em; */
@@ -193,6 +181,7 @@ figcaption {
   margin-bottom: 1em;
   background-color: #ffffff;
   text-align: center;
+  font-weight: bold;
   /* border: 2px red dotted; */
 }
 
@@ -203,6 +192,8 @@ figcaption {
   'vidBL vidBR';
   column-gap: 1em;
   row-gap: 1em;
+
+  padding: 1em;
   /* border: 2px green dotted; */
 }
 
@@ -212,11 +203,11 @@ figcaption {
 #vidBR { grid-area: vidBR; }
 
 #vidGallery video {
-  width: 35em;
-  height: 20em;
+  width: 30em;
+  height: 16em;
   border-radius: 25px;
   font-family: 'Livvic', sans-serif;
-  animation: fadeInAnimation ease 1s;
+  animation: fadeInAnimation ease-in 1s;
 }
 
 @keyframes fadeInAnimation {
