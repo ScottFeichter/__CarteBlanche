@@ -157,10 +157,8 @@ nav a:hover {
 
 main {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
 
 h2 {
@@ -173,6 +171,9 @@ h2 {
 }
 
 #twoTux {
+  z-index: -1;
+  margin-top: 2em;
+  position: fixed;
   padding: .5em;
 }
 
@@ -186,26 +187,46 @@ figure {
 }
 
 #history {
+
+  margin-top: 4em;
+  margin-right: 2em;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1em;
-  width: 40%;
+  width: 30%;
+  font-size: large;
   font-family: 'Livvic', sans-serif;
-  border: 2px blue dashed;
+  color:#ffffff;
+  background-color: rgba(0, 0, 0, .4);
+}
+
+#history p {
+  padding: 1em 1em .5em 1em;
+  width: 80%;
 }
 
 #navHorizontal {
+
+  padding-top: 2em 1em .5em 2em;
+  gap: 1em;
+  width: 30%;
+  margin-top: 6em;
+  margin-left: 2em;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 40%;
+  width: 30%;
+  height: 42em;
   font-family: 'Livvic', sans-serif;
-  border: 2px blue dashed;
+  background-color: rgba(0, 0, 0, .4);
+  /* border: 2px blue dashed; */
 }
 
 #navHorizontal a {
+  padding: 1em 1em .5em 1em;
+  width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -220,7 +241,7 @@ figure {
   transition-timing-function: ease-in;
   transition: background-color .5s;
   transition-timing-function: ease-out;
-  /* border: 2px blue dashed; */
+  border: 2px blue dashed;
 }
 
 #navHorizontal a p {
