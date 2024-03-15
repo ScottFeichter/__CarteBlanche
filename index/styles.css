@@ -139,6 +139,7 @@ header {
 
 #logo {
   padding: 1em;
+  visibility: hidden;
   /* border: 2px blue dashed; */
 }
 
@@ -179,18 +180,40 @@ main {
   justify-content: center;
   align-items: center;
   margin-bottom: 1em;
+  border: 1px black solid;
+}
+
+h2 {
+  margin-bottom: 2em;
+  font-weight: 900;
+  font-style: italic;
+  color: pink;
 }
 
 h1 {
   color: rgb(0, 0, 0);
   font-family: 'Livvic', sans-serif;
-  font-weight: 600;
-  font-size: 4em;
+  font-weight: 500;
+  font-size: 2.75em;
+  font-style: normal;
   text-align: center;
   text-transform: uppercase;
   text-rendering: optimizeLegibility;
-  letter-spacing: .25em;
+  letter-spacing: .22em;
   margin-bottom: .5em;
+  text-align: center;
+  padding-left: .2em;
+
+  display: inline-block;
+  transform: scale(1.1, .9);
+  /* Safari and Chrome */
+  -webkit-transform: scale(1.1, .9);
+  /* Firefox */
+  -moz-transform: scale(1.1, .9);
+  /* IE 9+ */
+  -ms-transform: scale(1.1, .9);
+  /* Opera */
+  -o-transform: scale(1.1, .9);
   /* border: 2px blue dotted; */
 }
 
