@@ -99,36 +99,18 @@
     }
 
 * {
+    font-family: 'Livvic', sans-serif;
     margin: 0;
     padding: 0;
 }
 
 body {
     background-color: #ffffff;
-    /* background-size: 500px; */
     background-repeat: no-repeat;
     background-position: center;
-    /* border: 2px red dashed; */
 }
 
-video {
-  position: fixed;
-  z-index: -1;
-  animation-delay: 10s;
-  animation: fadeInAnimation ease 5s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-}
-
-@keyframes fadeInAnimation {
-  0% {
-      opacity: 0;
-  }
-
-  100% {
-      opacity: 1;
-  }
-}
+/* -------- START DO NOT ADJUST ---------------------------- */
 
 header {
   display: flex;
@@ -178,7 +160,6 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 1em;
 }
 
 h1 {
@@ -190,64 +171,150 @@ h1 {
   text-transform: uppercase;
   text-rendering: optimizeLegibility;
   letter-spacing: .25em;
-  margin-bottom: .5em;
   /* border: 2px blue dotted; */
 }
 
-#twoTux {
-  padding: .5em;
-  margin-bottom: 1em;
-}
+/* --------- END DO NOT ADJUST ----------------------------- */
 
-#gallery {
-  margin: 2em 0 0 0;
-}
+
 
 figure {
-  height: 12em;
+  padding: 1em;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
   font-family: 'Livvic', sans-serif;
+  /* border: 2px orange dotted; */
 }
 
 figcaption {
+  display: block;
   font-size: 2em;
   margin-bottom: 1em;
   background-color: #ffffff;
-  border-radius: 25px;
-  width: 14em;
   text-align: center;
-
+  /* border: 2px blue dashed; */
 }
 
-figure audio {
-  width: 40em;
-  background-color: #ffffff;
-  border-radius: 25px;
+
+.performance {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  padding: 1em;
+  width: 80%;
+  height: auto;
+  width: auto;
   margin-bottom: 1em;
-}
+  border: 1px black solid;
+  animation-delay: 1s;
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 
-figure a {
-  background-color: #ffffff;
-  border-radius: 25px;
-  font-family: 'Livvic', sans-serif;
-  margin-top: 1em;
-  padding: .5em;
-  color: black;
-  width: 10em;
-  text-align: center;
   transition: color .5s;
   transition-timing-function: ease-in;
   transition: background-color .5s;
   transition-timing-function: ease-out;
-  /* border: 2px blue dashed; */
 }
 
-figure a:hover {
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}
+
+
+
+.performance:hover {
   background-color: rgb(0, 0, 0);
   border-radius: 5px;
   color: #ffffff;
 
 }
+
+
+
+/* ------ START PERFORMANCE STRUCTURE DIVS ----------------------------*/
+
+.perHeading {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: .5em;
+}
+
+.perfBody {
+  display: flex;
+  flex-direction: row;
+  gap: 3em;
+  justify-content: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  /* border: 2px dashed red; */
+}
+
+.row {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: .25em;
+  /* border: 2px dashed blue; */
+}
+
+/* ------ START PERFORMANCE DATA DIVS ----------------------------*/
+
+/* they all share perfData class */
+.perfData {
+  text-align: center;
+  font-size: larger;
+  margin: .1em .2em;
+  font-weight: 500;
+}
+
+/* heading data */
+.perfTitle {
+  font-size: xx-large;
+  font-weight: 600;
+}
+
+.perfLocation {
+  font-size: xx-large;
+  font-weight: 600;
+}
+
+/* body data */
+/* column one */
+.perfDay {}
+.perfTime {}
+.perfMeridiem {}
+.perfTimeZone {}
+
+/* column two */
+.perfMonth {}
+.perfDayNum {}
+.perfYear {}
+
+/* column three */
+.perfAddyNumber {}
+.perfAddyStreet {}
+.perfAddyCity {}
+.perfAddyState {}
+.perfAddyZip {}
+
+/* column four */
+.perfPhone {}
+.perfWeb{}
+
+/* column five */
+.perfLink {}
+.perfICS {}
