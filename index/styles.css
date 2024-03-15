@@ -179,16 +179,12 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 1em;
+  padding-top: 2em;
+  margin-bottom: 4em;
   border: 1px black solid;
 }
 
-h2 {
-  margin-bottom: 2em;
-  font-weight: 900;
-  font-style: italic;
-  color: pink;
-}
+
 
 h1 {
   color: rgb(0, 0, 0);
@@ -217,14 +213,6 @@ h1 {
   /* border: 2px blue dotted; */
 }
 
-#twoTux {
-  padding: .5em;
-  margin-bottom: 1em;
-}
-
-#gallery {
-  margin: 2em 0 0 0;
-}
 
 figure {
   height: 12em;
@@ -236,7 +224,7 @@ figure {
 }
 
 figcaption {
-  font-size: 2em;
+  font-size: 1.5em;
   margin-bottom: 1em;
   background-color: #ffffff;
   border-radius: 25px;
@@ -256,7 +244,7 @@ figure a {
   background-color: #ffffff;
   border-radius: 25px;
   font-family: 'Livvic', sans-serif;
-  margin-top: 1em;
+  margin-top: .5em;
   padding: .5em;
   color: black;
   width: 10em;
@@ -270,7 +258,7 @@ figure a {
 
 figure a:hover {
   background-color: rgb(0, 0, 0);
-  border-radius: 5px;
+  border-radius: 25px;
   color: #ffffff;
 
 }
